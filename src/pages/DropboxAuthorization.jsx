@@ -19,7 +19,7 @@ function DropboxAuthorization() {
           <Box color="#228be6" fontSize="32px">
             <FaDropbox />
           </Box>
-          <Text fontSize="24px">Dropbox Authorization Success</Text>
+          <Text fontSize="24px">Dropbox Authorization</Text>
         </HStack>
       </Button>
     </VStack>
