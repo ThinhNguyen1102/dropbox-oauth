@@ -25,28 +25,28 @@ function DropboxRedirect() {
           },
         }
       )
-      .then(response => response.data)
-      .then(data => {
-        return axios.post(
-          'http://localhost:8000/api/storage-provider',
-          {
-            ...data,
-            type: 'Dropbox',
-          },
-          {
-            headers: {
-              Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGluaHRiQGdtYWlsLmNvbSIsImV4cCI6MTcyMDQzNzIxOSwidHlwZSI6ImFjY2VzcyJ9.3l9mRWjwvpMlZnUrbiOGMj24mMSBzbGwi_oKOznuvPk`,
-            },
-          }
-        );
-      })
-      .then(response => console.log(response))
+      .then(response => console.log(response.data))
+      // .then(data => {
+      //   return axios.post(
+      //     'http://localhost:8000/api/storage-provider',
+      //     {
+      //       ...data,
+      //       type: 'Dropbox',
+      //       connection_label: 'Dropbox-1',
+      //     },
+      //     {
+      //       headers: {
+      //         Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGluaHRiQGdtYWlsLmNvbSIsImV4cCI6MTcyMDU4MzE2OSwidHlwZSI6ImFjY2VzcyJ9.r6kbdaUm-m9baDToDHZWRCAzsIr2njS1NQJX1B0zHpw`,
+      //       },
+      //     }
+      //   );
+      // })
       .catch(error => console.log(error));
   }, [authorizeCode]);
 
   return (
     <VStack mt="200px" gap="30px">
-      <Heading>Authorized Dropbox</Heading>
+      <Heading>Authorized Dropbox Success</Heading>
     </VStack>
   );
 }
