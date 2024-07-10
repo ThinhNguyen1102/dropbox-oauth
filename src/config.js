@@ -1,5 +1,5 @@
 export const config = {
-  DROPBOX_CLIENT_ID: 'crjxb4430j6hqjh',
-  DROPBOX_CLIENT_SECRET: 'e9kjagwbyjxqchh',
-  DROPBOX_REDIRECT_URI: 'http://localhost:3000/dropbox/authorize/redirect',
+  DROPBOX_CLIENT_ID: process.env.DROPBOX_CLIENT_ID,
+  DROPBOX_CLIENT_SECRET: process.env.DROPBOX_CLIENT_SECRET,
+  DROPBOX_REDIRECT_URI: process.env.DROPBOX_REDIRECT_URI,
 };
