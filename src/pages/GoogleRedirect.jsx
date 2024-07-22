@@ -25,7 +25,7 @@ function GoogleRedirect() {
 
   return (
     <VStack mt="200px" gap="30px">
-      <Heading>Authorized Gooogle Drive Success</Heading>
+      <Heading>Authorized Google Drive Success</Heading>
     </VStack>
   );
 }

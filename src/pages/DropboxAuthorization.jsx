@@ -11,7 +11,6 @@ function DropboxAuthorization() {
         p="20px"
         h="60px"
         onClick={() => {
-          console.log(config);
           window.location.href = `https://www.dropbox.com/oauth2/authorize?client_id=${config.DROPBOX_CLIENT_ID}&redirect_uri=${config.DROPBOX_REDIRECT_URI}&response_type=code&token_access_type=offline`;
         }}
       >

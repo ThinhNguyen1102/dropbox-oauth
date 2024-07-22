@@ -11,7 +11,6 @@ function GoogleAuthorization() {
         p="20px"
         h="60px"
         onClick={() => {
-          console.log(config);
           window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?scope=${config.SCOPE}&access_type=offline&include_granted_scopes=true&response_type=code&client_id=${config.GOOGLE_CLIENT_ID}&redirect_uri=${config.GOOGLE_REDIRECT_URI}`;
         }}
       >
