@@ -2,4 +2,9 @@ export const config = {
   DROPBOX_CLIENT_ID: process.env.REACT_APP_CLIENT_ID,
   DROPBOX_CLIENT_SECRET: process.env.REACT_APP_CLIENT_SECRET,
   DROPBOX_REDIRECT_URI: process.env.REACT_APP_REDIRECT_URI,
+  GOOGLE_CLIENT_ID: process.env.REACT_APP_GG_CLIENT_ID,
+  GOOGLE_CLIENT_SECRET: process.env.REACT_APP_GG_CLIENT_SECRET,
+  GOOGLE_REDIRECT_URI: process.env.REACT_APP_GG_REDIRECT_URI,
+  GOOGLE_TOKEN_URI: process.env.REACT_APP_GG_TOKEN_URI,
+  SCOPE: 'https://www.googleapis.com/auth/drive',
 };
